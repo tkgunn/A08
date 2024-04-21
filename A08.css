@@ -1,121 +1,101 @@
-/* the styles for the elements */
+/* Resetting default margins and paddings for all elements */
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
+
+/* Setting up basic styles for HTML and body */
 html {
-	background-color: white;
+    background-color: white;
 }
 body {
-	font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 600px;
+    width: 800px; /* Changed width to 800 pixels */
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
 }
+
+/* Styling links */
 a:focus, a:hover {
-	font-style: italic;
+    font-style: italic;
 }
-/* the styles for the header */
+
+/* Styles for the header section */
 header {
-	padding: 1.5em 0 2em 0;
-	border-bottom: 3px solid #931420;
-	background-image: -moz-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-	background-image: -webkit-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-	background-image: -o-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-	background-image: linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    padding: 1.5em 0 2em 0;
+    border-bottom: 3px solid #931420;
+    background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 }
 header h2 {
-	font-size: 175%;
-	color: #800000;
+    font-size: 1.75em; /* Changed from percentage to em */
+    color: #800000;
 }
 header h3 {
-	font-size: 130%;
-	font-style: italic;
+    font-size: 1.3em; /* Changed from percentage to em */
+    font-style: italic;
 }
 header img {
-	float: left;
-	padding: 0 30px;
+    float: left;
+    padding: 0 30px;
 }
 .shadow {
-	text-shadow: 2px 2px 2px #800000;
-}
-/* the styles for the main content */
-main {
-	clear: left;
-}
-section{width: 525px;
-float: right;}
-aside{width: 215px;
-float: right;}
-main {
-	padding: 0 30px;
-	
-}
-main h1 {
-	
-}
-main h2 {
-	color: #800000;
-	font-size: 130%;
-	padding: .5em 0 .25em 0;
-}
-main h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
-}
-main img {
-	padding-bottom: 1em;
-}
-main p {
-	padding-bottom: .5em;
-}
-main blockquote {
-	padding: 0 2em;
-	font-style: italic;
-}
-main ul {
-	padding: 0 0 .25em 1.25em;
-}
-main li {
-	padding-bottom: .35em;
+    text-shadow: 2px 2px 2px #800000;
 }
 
-/* the styles for the article */
-article {
-	padding: .5em 0;
-	border-top: 2px solid #800000;
-	border-bottom: 2px solid #800000;
+/* Styles for the main content section */
+section {
+    float: right; /* Float to the right */
+    width: 525px; /* Set width to 525 pixels */
+    padding: 20px; /* Added padding */
 }
-article h2 {
-	padding-top: 0;
+section h2 {
+    font-size: 1.3em; /* Changed from percentage to em */
 }
-article h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
-}
-
-/* the styles for the aside */
-
-aside h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
-}
-aside img {
-	padding-bottom: 1em;
+section h3 {
+    font-size: 1.05em; /* Changed from percentage to em */
+    padding-bottom: 0.25em;
 }
 
-/* the styles for the footer */
+/* Styles for the aside section */
+aside {
+    width: 215px; /* Set width to 215 pixels */
+    float: right; /* Float to the right */
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+aside h3, aside h2 {
+    font-size: 1.05em; /* Changed from percentage to em */
+    padding-bottom: 0.25em;
+}
+
+/* Styles for the footer section */
 footer {
-	background-color: #931420;
+    background-color: #931420;
+    clear: both; /* Cleared floats */
 }
 footer p {
-	text-align: center;
-	color: white;
-	padding: 1em 0;
+    text-align: center;
+    color: white;
+    padding: 1em 0;
+}
+
+/* Styles for the article section */
+article {
+    padding: 0.5em 0;
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+}
+article img {
+    float: right; /* Float to the right */
+    margin: 10px; /* Adjust margins for spacing */
+    border: 1px solid black; /* Add border */
+}
+article h2 {
+    font-size: 150%; /* Adjusted heading size */
+    color: #800000;
+    padding-top: .5em;
+    padding-bottom: .25em;
+    margin: 0;
 }
